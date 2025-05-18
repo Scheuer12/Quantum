@@ -1,0 +1,151 @@
+{
+    "reserved_space": "personal information",
+    "hydrogen": 80,
+    "materials_inventory": [
+        {
+            "name": "Water",
+            "formula": "H2O",
+            "stability": 10,
+            "rarity": 1,
+            "amount": 0,
+            "Discovered": true
+        },
+        {
+            "name": "Hydrogen",
+            "formula": "H2",
+            "stability": 10,
+            "rarity": 1,
+            "amount": 0,
+            "Discovered": true
+        },
+        {
+            "name": "Methane",
+            "formula": "CH4",
+            "stability": 8,
+            "rarity": 2,
+            "amount": 0,
+            "Discovered": true
+        },
+        {
+            "name": "Ammonia",
+            "formula": "NH3",
+            "stability": 8,
+            "rarity": 2,
+            "amount": 0,
+            "Discovered": true
+        },
+        {
+            "name": "Ethanol",
+            "formula": "C2H5OH",
+            "stability": 9,
+            "rarity": 2,
+            "amount": 0,
+            "Discovered": true
+        },
+        {
+            "name": "Formic Acid",
+            "formula": "CH2O2",
+            "stability": 8,
+            "rarity": 3,
+            "amount": 0,
+            "Discovered": false
+        },
+        {
+            "name": "Acetic Acid",
+            "formula": "C2H4O2",
+            "stability": 8,
+            "rarity": 3,
+            "amount": 0,
+            "Discovered": false
+        },
+        {
+            "name": "Glucose",
+            "formula": "C6H12O6",
+            "stability": 10,
+            "rarity": 3,
+            "amount": 0,
+            "Discovered": false
+        },
+        {
+            "name": "Propane",
+            "formula": "C3H8",
+            "stability": 9,
+            "rarity": 3,
+            "amount": 0,
+            "Discovered": false
+        },
+        {
+            "name": "Hydrogen Peroxide",
+            "formula": "H2O2",
+            "stability": 6,
+            "rarity": 4,
+            "amount": 0,
+            "Discovered": false
+        },
+        {
+            "name": "Hydrochloric Acid",
+            "formula": "HCl",
+            "stability": 7,
+            "rarity": 4,
+            "amount": 0,
+            "Discovered": false
+        },
+        {
+            "name": "Benzene",
+            "formula": "C6H6",
+            "stability": 7,
+            "rarity": 5,
+            "amount": 0,
+            "Discovered": false
+        },
+        {
+            "name": "Hydrogen Iodide",
+            "formula": "HI",
+            "stability": 4,
+            "rarity": 6,
+            "amount": 0,
+            "Discovered": false
+        },
+        {
+            "name": "Deuterium Oxide",
+            "formula": "D2O",
+            "stability": 3,
+            "rarity": 8,
+            "amount": 0,
+            "Discovered": false
+        },
+        {
+            "name": "Tritium Gas",
+            "formula": "T2 (3H2)",
+            "stability": 1,
+            "rarity": 10,
+            "amount": 0,
+            "Discovered": false
+        },
+        {
+            "name": "Polonium Hydride",
+            "formula": "PoH2",
+            "stability": 1,
+            "rarity": 10,
+            "amount": 0,
+            "Discovered": false
+        },
+        {
+            "name": "Radon Hydride",
+            "formula": "RnH2",
+            "stability": 1,
+            "rarity": 10,
+            "amount": 0,
+            "Discovered": false
+        }
+    ],
+    "cash": 2000,
+    "quantum": 0,
+    "features": [
+        0
+    ],
+    "total_play_time": 0,
+    "last_play_time_utc": "2025-05-18T17:42:00Z",
+    "sponsors_satisfaction": 1,
+    "progress_tier": 0
+}
