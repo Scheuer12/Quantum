@@ -37,7 +37,6 @@ def main_menu(user_data):
 		if action == 1:
 			print("You press the option on the screen.")
 			split_substance(user_data, narrative)
-			break
 		else:
 			print(narrative["choose_valid"])
 	except ValueError:

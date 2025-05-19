@@ -20,3 +20,19 @@ def clear_terminal():
 def load_narrative():
     with open('data/narrative.json', 'r', encoding='utf-8') as f:
         return json.load(f)
+    
+def load_experiments():
+    with open("data/experiments.json", 'r') as exp:
+        content = exp.read()
+        content = re.sub(r'//.*', '', content)
+        content = re.sub(r',\s*([}\]])', r'\1', content)
+
+        return json.loads(content)
+    
+def load_particles():
+    with open("data/particles_data.json", 'r') as exp:
+        content = exp.read()
+        content = re.sub(r'//.*', '', content)
+        content = re.sub(r',\s*([}\]])', r'\1', content)
+
+        return json.loads(content)

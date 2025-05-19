@@ -1,9 +1,9 @@
 {
     "reserved_space": "personal information",
-    "hydrogen": 0,
-    "proton": 0,
-    "electron": 0,
-    "neutron": 0,
+    "hydrogen": 2,
+    "proton": 88,
+    "electron": 111,
+    "neutron": 2,
     "pion": 0,
     "quark_gluon": 0,
     "materials_inventory": [
@@ -12,7 +12,7 @@
             "formula": "H2O",
             "stability": 10,
             "rarity": 1,
-            "amount": 6,
+            "amount": 1,
             "Discovered": true
         },
         {
@@ -44,7 +44,7 @@
             "formula": "C2H5OH",
             "stability": 9,
             "rarity": 2,
-            "amount": 4,
+            "amount": 2,
             "Discovered": true
         },
         {
@@ -143,6 +143,10 @@
             "amount": 0,
             "Discovered": false
         }
+    ],
+    "experiments": [
+        "particles_collider",
+        "atoms_harvester"
     ],
     "upgrades": {
         "splitter_oddity": {
