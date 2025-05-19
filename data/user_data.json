@@ -1,13 +1,12 @@
 {
     "reserved_space": "personal information",
-    "hydrogen": 84,
+    "hydrogen": 0,
     "proton": 0,
     "electron": 0,
     "neutron": 0,
     "pion": 0,
     "quark_gluon": 0,
-    "materials_inventory": 
-    {
+    "materials_inventory": [
         {
             "name": "Water",
             "formula": "H2O",
@@ -144,16 +143,17 @@
             "amount": 0,
             "Discovered": false
         }
-    },
-    
+    ],
     "upgrades": {
-            "splitter_oddity": {
+        "splitter_oddity": {
             "level": 0,
-            "cost": 200,
+            "cost": 200
         }
-    }
+    },
     "cash": 2000,
-    "features": [0],
+    "features": [
+        0
+    ],
     "total_play_time": 0,
     "last_play_time_utc": "2025-05-18T17:42:00Z",
     "sponsors_satisfaction": 1,
