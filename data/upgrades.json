@@ -1,0 +1,27 @@
+{
+    "splitter": {
+        {
+        "name": "Material Processor CPU",
+        "description": "Improving the CPU will increase the particle extraction rate in 10% on the first level, and 5% on the next levels until 5.",
+        "max_level": 5,
+        "upgrade_costs": [100, 300, 900, 1800, 3600],
+        "upgrade_effects": [
+            {"improvement": 0.1},
+            {"improvement": 0.15},
+            {"improvement": 0.2},
+            {"improvement": 0.25},
+            {"improvement": 0.3}
+        ]},
+        {
+        "name": "(sub)Particle Collector",
+        "description": "Allows a small chance of obtaining particles when processing materials.",
+        "max_level": 3,
+        "upgrade_costs": [5000, 10000, 20000],
+        "upgrade_effects": [
+            {"split_ratio": 0.5},
+            {"split_ratio": 1},
+            {"split_ratio": 2},
+        ]}
+        }
+
+}

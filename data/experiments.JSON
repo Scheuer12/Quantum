@@ -1,0 +1,42 @@
+{
+    "particles_collider": {
+        "name": "Particles Collider",
+        "description": "Collides Hydrogen particles to try and obtain subparticles.",
+        "tick": 5,
+        "fuel": "hydrogen",
+        "fuel_consumption_multiplier": 1,
+        "fuel_limit": "100",
+        "subproducts": [
+            "proton",
+            "electron",
+            "neutron"
+        ],
+        "extra_subproducts_rate": {
+            "proton": 0,
+            "electron": 0,
+            "neutron": 0,
+            "pion": 0,
+            "quark_gluon": 0
+        }  
+    },
+    "atoms_harvester": {
+        "name": "Atoms Harvester",
+        "description": "Harvests hydrogen atoms for subparticles using artificial strong force approximation.",
+        "tick": 10,
+        "fuel": "hydrogen",
+        "fuel_consumption_multiplier": 1.15,
+        "fuel_limit": "1k",
+        "subproducts": [
+            "proton",
+            "electron"
+        ],
+        "extra_subproducts_rate": {
+            "hydrogen": 0,
+            "proton": 0,
+            "electron": 0,
+            "neutron": 0.1,
+            "pion": 0,
+            "quark_gluon": 0
+        }  
+    }
+}

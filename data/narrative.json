@@ -1,0 +1,29 @@
+{
+	"intro": [
+		"You open your eyes. What was that? Were you dreaming? It seemed a lifetime!",
+		"You get up from the chair with some kind of sensors over it - even though you can't remember why you sat there in the first place. Nothing of that makes sense.",
+		"You feel the letter you received the day before laying in your pocket.",
+		"You take it out and read it again.",
+		"It says: ",
+		"Saint Olga Street, 13",
+		"Room 3",
+		"You check the GPS in your phone. You are in the right place.",
+		"In the other side of the room, you see a glowing panel. Over it, lays a blue button.",
+		"Will you resist the urge to test it?"
+	],
+	"button_prompt": "Press Blue Button? (y/n)",
+	"button_resist": "You look around and doesn't seem to be a door out. Strange. You look at the button again. It calls you.",
+	"button_press": "You press the button. The panel lights up.",
+	"main_menu": "The screen lights up and you see a list of substances. You can choose one of them to split into its components.",
+	"split_option": "You see a few options to select:",
+	"split_cost": "Split cost: {cost}\nYou can split:",
+	"split_choose": "Choose a substance to split (1-{max}): ",
+	"split_invalid": "Please choose a number between 1 and {max}.",
+	"split_success": "Success! You split 1 Hydrogen Atom.",
+	"split_fail": "Failed! You didn't split any Hydrogen Atom.",
+	"split_not_enough": "You don't have enough molecules to split.",
+	"split_tries": "How many tries? ({odd}% chance) (1-{chances}): ",
+	"no_substances": "No substances available to split.",
+	"choose_valid": "Choose a valid button number.",
+	"enter_valid": "Please enter a valid number."
+}
