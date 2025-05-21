@@ -2,7 +2,7 @@
     "particles_collider": {
         "name": "Particles Collider",
         "description": "Collides Hydrogen particles to try and obtain subparticles.",
-        "tick": 5,
+        "tick": 10,
         "fuel": "hydrogen",
         "fuel_consumption_multiplier": 1,
         "fuel_limit": "100",

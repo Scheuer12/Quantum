@@ -5,24 +5,29 @@
       "lifetime_real_sec": 0,
       "lifetime_game_sec": 1209600,
       "production_time_real_sec": 0,
-      "production_time_game_sec": 20,
-      "production_cost_hydrogen": 0
+      "production_time_game_sec": 200,
+      "production_cost_protons": 1,
+      "production_cost_eletrons": 1
     },
     "proton": {
       "emission_per_sec": 0.0008,
       "lifetime_real_sec": 0,
       "lifetime_game_sec": 5,
       "production_time_real_sec": 0.000000001,
-      "production_time_game_sec": 5,
-      "production_cost_hydrogen": 3
+      "production_time_game_sec": 20,
+      "production_cost": 
+                {"Hydrogen": 3
+                }
     },
     "electron": {
       "emission_per_sec": 0.0004,
       "lifetime_real_sec": 0,
       "lifetime_game_sec": 5,
       "production_time_real_sec": 0.000000001,
-      "production_time_game_sec": 4,
-      "production_cost_hydrogen": 2
+      "production_time_game_sec": 20,
+      "production_cost":
+                {"Hydrogen": 2
+                }
     },
     "neutron": {
       "emission_per_sec": 0.0005,
@@ -30,23 +35,30 @@
       "lifetime_game_sec": 880,
       "production_time_real_sec": 0.00000001,
       "production_time_game_sec": 150,
-      "production_cost_hydrogen": 5
+      "production_cost":
+                {"Hydrogen": 5
+                }
     },
     "pion": {
       "emission_per_sec": 0.002,
       "lifetime_real_sec": 0.000000025,
       "lifetime_game_sec": 2,
       "production_time_real_sec": 0.0000001,
-      "production_time_game_sec": 3,
-      "production_cost_hydrogen": 2
+      "production_time_game_sec": 5,
+      "production_cost":
+                {"eletron": 1
+                }
     },
     "quark_gluon": {
       "emission_per_sec": 0.01,
       "lifetime_real_sec": 0.000000000001,
       "lifetime_game_sec": 1,
       "production_time_real_sec": 0.000001,
-      "production_time_game_sec": 10,
-      "production_cost_hydrogen": 6
+      "production_time_game_sec": 500,
+      "production_cost":
+                {"proton": 2,
+                "pion": 5
+                }
     },
     "quark": {
       "emission_per_sec": 0.005,
@@ -54,7 +66,8 @@
       "lifetime_game_sec": 0.5,
       "production_time_real_sec": 0.00000001,
       "production_time_game_sec": 12,
-      "production_cost_hydrogen": 4
+      "production_cost_neutron": 20,
+      "production_cost_proton": 2,
     },
     "higgs_boson": {
       "emission_per_sec": 0.25,
@@ -62,7 +75,7 @@
       "lifetime_game_sec": 1,
       "production_time_real_sec": 0.0001,
       "production_time_game_sec": 90,
-      "production_cost_hydrogen": 50
+      "production_cost_pion": 50
     }
   }
 }

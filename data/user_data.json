@@ -1,9 +1,9 @@
 {
     "reserved_space": "personal information",
     "hydrogen": 2,
-    "proton": 88,
-    "electron": 111,
-    "neutron": 2,
+    "proton": 0,
+    "electron": 0,
+    "neutron": 0,
     "pion": 0,
     "quark_gluon": 0,
     "materials_inventory": [

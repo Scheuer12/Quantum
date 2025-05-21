@@ -32,16 +32,23 @@ thread.start()
 thread2 = threading.Thread(target=pg.register_production_autoloop)
 thread2.start()
 
+
 while True:
     try:
-        os.system('cls' if os.name == 'nt' else 'clear')
-        print("Available resources:")
-        for item, amount in pg.products.items():
-            print(f"{item}: {math.floor(amount)} ({round(pg.production[item],5)} per second)")
-        time.sleep(0.25)
+        while True:
+            os.system('cls' if os.name == 'nt' else 'clear')
+            print("Available resources:\n")
+            for item, amount in pg.products.items():
+                lifetime = pg.particles[item].get("lifetime_game_sec", 0)
+                decay_rate = round(math.floor(amount) / lifetime, 5) if amount >= 1 and lifetime > 0 else 0
 
+                print(f"{item}: {math.floor(amount)} "
+                    f"({round(pg.production[item], 5)} per second) "
+                    f"(Decay: {decay_rate} /s)")
+            
+            time.sleep(0.25)  # Aguarda um pouco antes de limpar e reimprimir
     except KeyboardInterrupt:
-        print("\n🛑 Stopping Experiments...")
+        print("\nEncerrando monitoramento de partículas...")
         pg.stop()
         pg.register_production()
         break

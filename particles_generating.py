@@ -19,6 +19,7 @@ class ProductionManager:
         self.prod_multiplier = 0  # Pode ser modificado por upgrades depois
 
         # Dicionários principais
+        self.decay_buffer = defaultdict(float)
         self.production = defaultdict(float)            # produção por segundo
         self.products = defaultdict(float)              # partículas em produção contínua
         self.whole_products = defaultdict(int)          # contador de unidades inteiras
@@ -62,13 +63,14 @@ class ProductionManager:
         for item, qty in self.products.items():
             int_qty = math.floor(qty)
             self.user_data[item] = int_qty
-        save_user_data(self.user_data)
+            save_user_data(self.user_data)
 
     def tick_autoloop(self, interval=0.25):
         self.update_particles_inventory()
         while not self.stop_signal.is_set():
             for name, rate in self.production.items():
                 self.products[name] += rate
+            self.decay_particles()
             time.sleep(interval)
         
 
@@ -79,3 +81,24 @@ class ProductionManager:
                 self.user_data[item] = int_qty
             save_user_data(self.user_data)
             time.sleep(interval)
+
+
+    def decay_particles(self, interval=0.25):
+        for name, pdata in self.particles.items():
+            if self.products.get(name, 0) < 1:
+                continue
+
+            lifetime = pdata.get("lifetime_game_sec", 0)
+            if lifetime <= 0:
+                continue
+
+            decay_amount = self.products[name] * (interval / lifetime)
+            self.decay_buffer[name] += decay_amount
+
+            while self.decay_buffer[name] >= 1:
+                self.products[name] -= 1
+                self.decay_buffer[name] -= 1
+
+                if self.products[name] < 0:
+                    self.products[name] = 0
+                    self.decay_buffer[name] = 0  # limpa também
