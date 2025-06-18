@@ -15,7 +15,7 @@
 	"button_resist": "You look around and doesn't seem to be a door out. Strange. You look at the button again. It calls you.",
 	"button_press": "You press the button. The panel lights up.",
 	"main_menu": "The screen lights up and you see a list of substances. You can choose one of them to split into its components.",
-	"split_option": "You see a few options to select:",
+	"options": "You see a few options to select:",
 	"split_cost": "Split cost: {cost}\nYou can split:",
 	"split_choose": "Choose a substance to split (1-{max}): ",
 	"split_invalid": "Please choose a number between 1 and {max}.",

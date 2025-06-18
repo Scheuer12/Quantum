@@ -74,6 +74,7 @@ class ProductionManager:
             time.sleep(interval)
         
 
+#Register on lasting data total particles supply every given interval (standart: 10s)
     def register_production_autoloop(self, interval=10):
         while not self.stop_signal.is_set():
             for item, qty in self.products.items():
@@ -83,6 +84,7 @@ class ProductionManager:
             time.sleep(interval)
 
 
+#Kills particles according to their respective mid-life cycle (on a simplified way)
     def decay_particles(self, interval=0.25):
         for name, pdata in self.particles.items():
             if self.products.get(name, 0) < 1:

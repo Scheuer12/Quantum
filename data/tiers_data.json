@@ -5,9 +5,9 @@
             "tier_level": 0,
             "tier_name": "Experiment Sample #829",
             "tier_main_options": [
-                ["Settings", "0. Game Settings."],
                 ["Split", "1. Try to Obtain Hydrogen from the Material."],
                 ["Experiment", "2. Start experiments with hydrogen."],
+                ["Settings", "888. Configure your settings."],
                 ["Support", "999. Support the indie dev :D."],
                 ["Help", "1000. Find guidance."]
             ],
@@ -22,10 +22,6 @@
                 ["Experiment", "2. Start experiments with hydrogen."],
                 ["Auto", "3. Configure automations."],
                 ["Improvements", "4. Upgrade your lab."],
-                ["Achievements", "777. Check your achievements."],
-                ["Settings", "888. Configure your settings."],
-                ["Support", "999. Support the indie dev :D."],
-                ["Help", "1000. Find guidance."]
                 ["Achievements", "777. Check your achievements."],
                 ["Settings", "888. Configure your settings."],
                 ["Support", "999. Support the indie dev :D."],
@@ -47,15 +43,11 @@
                 ["Settings", "888. Configure your settings."],
                 ["Support", "999. Support the indie dev :D."],
                 ["Help", "1000. Find guidance."]
-                ["Achievements", "777. Check your achievements."],
-                ["Settings", "888. Configure your settings."],
-                ["Support", "999. Support the indie dev :D."],
-                ["Help", "1000. Find guidance."]
             ],
             "tier_multiplier": 1
         },
         {
-            "tier_level": 0,
+            "tier_level": 999,
             "tier_name": "Welcome",
             "tier_main_options": [
                 ["Split", "1. Try to Obtain Hydrogen from the Material."]
@@ -63,7 +55,7 @@
             "tier_multiplier": 1
         },
         {
-            "tier_level": 0,
+            "tier_level": 999,
             "tier_name": "Welcome",
             "tier_main_options": [
                 ["Split", "1. Try to Obtain Hydrogen from the Material."]

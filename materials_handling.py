@@ -21,27 +21,6 @@ def count_atoms(formula):
         atom_count += int(count) if count else 1
     return atom_count
 
-def main_menu(user_data):
-	narrative = at.load_narrative()
-	at.clear_terminal()
-	print(f"Sponsors Satisfaction: {user_data.get('sponsors_satisfaction', 0)}%")
-	print(f"Hydrogen Atoms: {user_data['hydrogen']} \n")
-	print("Substances available:")
-	for substance in user_data['materials_inventory']:
-		if substance.get('Discovered', False):
-			print(f"{substance['name']}: {substance['formula']} - {substance['amount']} molecules")
-	print(f"\nMoney: ${user_data['cash']}")
-	at.save_user_data(user_data)
-	try:
-		action = int(input(narrative["split_option"]))
-		if action == 1:
-			print("You press the option on the screen.")
-			split_substance(user_data, narrative)
-		else:
-			print(narrative["choose_valid"])
-	except ValueError:
-		print(narrative["enter_valid"])
-
 def split_substance(user_data, narrative):
 	splitsMade = 0
 	cost = 100 * (1.15 ** splitsMade)
